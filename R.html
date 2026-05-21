@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Menu Escolar</title>
+<link rel="stylesheet" href="R.css">
+</head>
+<body>
+
+<div class="card">
+
+  <button id="btn" class="toggle" aria-expanded="false">
+    Etapa 1
+  </button>
+
+  <div class="menu">
+
+    <div class="botoes">
+      <button class="btn verde">Entregar Etapa 1</button>
+      <button class="btn azul">Finalização da Avaliação</button>
+    </div>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li>
+    <button class="nav-Item">
+      Aulas
+    </button>
+  </li>
+  <li>
+    <button class="nav-Item active">
+      Faltas
+    </button>
+  </li>
+  <li>
+    <button class="nav-Item">
+      Notas
+    </button>
+  </li>
+  <li>
+    <button class="nav-Item">
+      Materiais de Aula
+    </button>
+  </li>
+  <li>
+    <button class="nav-Item">
+      Fórum de Discussão
+    </button>
+  </li>
+  <li>
+    <button class="nav-Item">
+      Trabalhos
+    </button>
+  </li>
+  <li>
+    <button class="nav-Item">
+      Projeto Extensionista
+    </button>
+  </li>
+  <li>
+    <button class="nav-Item">
+      Observação
+    </button>
+  </li>
+  <li>
+    <button class="nav-Item">
+      Estatística
+    </button>
+  </li>
+</ul>
+<div class="conteudo-faltas">
+  <!-- Alerta informativo -->
+  <div class="alerta-info">
+    <p><strong>As aulas marcadas com</strong> <input type="checkbox" disabled checked> <strong>possuem atestado no respectivo período.</strong></p>
+    <p>Os alunos sem destaque estão com o período letivo fechado.</p>
+    <p>É possível utilizar as teclas direcionais do teclado para percorrer as caixas de texto.</p>
+  </div>
+
+  <!-- Opções -->
+  <div class="opcoes-faltas">
+    <label class="checkbox-label">
+      <input type="checkbox"> Exibir alunos inativos
+    </label>
+    <label class="checkbox-label">
+      <input type="checkbox"> Inverter ordenação por data
+    </label>
+  </div>
+
+  <!-- Tabela de Faltas -->
+  <div class="tabela-faltas-container">
+    <h3>Faltas</h3>
+    <table class="tabela-faltas">
+      <thead>
+        <tr>
+          <th rowspan="2">Aluno</th>
+          <th>20/05/2026<br><small>Qua, 1 aula</small></th>
+          <th>06/05/2026<br><small>Qua, 1 aula</small></th>
+          <th>29/04/2026<br><small>Qua, 1 aula</small></th>
+          <th>22/04/2026<br><small>Qua, 1 aula</small></th>
+          <th>18/04/2026<br><small>Sab, 1 aula</small></th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+  <td class="aluno-info">
+    <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Ana Bezerra" class="foto-aluno">
+    <div class="dados-aluno">
+      <strong>1 - Ana Bezerra</strong><br>
+      <small>(20260002)</small>
+    </div>
+  </td>
+
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+</tr>
+
+<tr>
+  <td class="aluno-info">
+    <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Bruno Silva" class="foto-aluno">
+    <div class="dados-aluno">
+      <strong>2 - Bruno Silva</strong><br>
+      <small>(20260003)</small>
+    </div>
+  </td>
+
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+</tr>
+
+<tr>
+  <td class="aluno-info">
+    <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Caua Santos" class="foto-aluno">
+    <div class="dados-aluno">
+      <strong>3 - Caua Santos</strong><br>
+      <small>(20190001)</small>
+    </div>
+  </td>
+
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+</tr>
+
+<tr>
+  <td class="aluno-info">
+    <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Davi Luiz" class="foto-aluno">
+    <div class="dados-aluno">
+      <strong>4 - Davi Luiz</strong><br>
+      <small>(20000001)</small>
+    </div>
+  </td>
+
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+</tr>
+
+<tr>
+  <td class="aluno-info">
+    <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="Evelyn Ibiapina" class="foto-aluno">
+    <div class="dados-aluno">
+      <strong>5 - Evelyn Ibiapina</strong><br>
+      <small>(20180001)</small>
+    </div>
+  </td>
+
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+</tr>
+
+<tr>
+  <td class="aluno-info">
+    <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Gabriel Sousa" class="foto-aluno">
+    <div class="dados-aluno">
+      <strong>6 - Gabriel Sousa</strong><br>
+      <small>(20170001)</small>
+    </div>
+  </td>
+
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+</tr>
+
+<tr>
+  <td class="aluno-info">
+    <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="Hugo Bernardo" class="foto-aluno">
+    <div class="dados-aluno">
+      <strong>7 - Hugo Bernardo</strong><br>
+      <small>(20160001)</small>
+    </div>
+  </td>
+
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+</tr>
+
+<tr>
+  <td class="aluno-info">
+    <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Yasmim Pereira" class="foto-aluno">
+    <div class="dados-aluno">
+      <strong>8 - Yasmim Pereira</strong><br>
+      <small>(20150001)</small>
+    </div>
+  </td>
+
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+</tr>
+
+<tr>
+  <td class="aluno-info">
+    <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="Zenaide Ferreira" class="foto-aluno">
+    <div class="dados-aluno">
+      <strong>9 - Zenaide Ferreira</strong><br>
+      <small>(20150000)</small>
+    </div>
+  </td>
+
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="1" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+  <td><input type="number" value="0" class="input-falta"></td>
+</tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="R.js"></script>
+</body>
+</html>
